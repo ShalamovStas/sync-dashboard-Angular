@@ -29,7 +29,10 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/scss/argon.scss"
+              "src/assets/scss/argon.scss",
+              "src/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/assets/vendor/nucleo/css/nucleo.css",
+              "src/assets/vendor/nucleo/css/font.google.apis.css"
             ],
             "scripts": []
           },
@@ -125,6 +128,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "sync-dashboard"
 }
