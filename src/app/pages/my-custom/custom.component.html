@@ -7,7 +7,7 @@
 </div>
 <div class="container-fluid mt--7">
   <div class="row">
-    
+
   </div>
   <div class="row mt-5">
     <div class="col-xl-8 mb-5 mb-xl-0">
@@ -18,7 +18,31 @@
               <h3 class="mb-0">Custom</h3>
             </div>
             <div class="col text-right">
-              <button  class="btn btn-sm btn-primary">Button</button>
+              <button class="btn btn-sm btn-primary">Button</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row icon-examples">
+            <div class="col-lg-3 col-md-6">
+              <button type="button" placement="top-center" triggers="hover focus click"
+                ngbTooltip="{{copy === 'active-40' ? 'Copied':'Copy to clipboard'}}" class="btn-icon-clipboard"
+                ngxClipboard [cbContent]="'active-40'" (cbOnSuccess)="copy = 'active-40'">
+                <div>
+                  <i class="ni ni-active-40"></i>
+                  <span>active-40</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="col-lg-3 col-md-6 block">
+              <div>
+                Block, hello <span>span text</span> other text
+                <hr>
+                <a href="" class="link">Google</a>
+              </div>
+              <a href="" class="link-2">Google</a>
+
             </div>
           </div>
         </div>

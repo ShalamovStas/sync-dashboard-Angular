@@ -1,0 +1,35 @@
+$fz:80px;
+$color-1: green;
+
+//Шаблон
+%tplborder{
+    border-bottom: 5px dashed red; 
+}
+
+@mixin fontz($f){
+    font-size: $f;
+}
+
+.block{
+    border: 1px solid #f56036 ;
+    span {
+        color: $color-1;
+        font-weight: 600;
+    }
+}
+
+.link{
+    text-decoration:  underline;
+    
+    &:hover{
+        color: $color-1;
+    }
+
+    @extend %tplborder
+}
+
+.link-2{
+    @include fontz(1.5rem);
+    font-weight: 600;
+    @extend %tplborder
+}
