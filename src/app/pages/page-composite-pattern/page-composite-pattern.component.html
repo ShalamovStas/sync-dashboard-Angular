@@ -1,0 +1,42 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+        <div class="header-body">
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+
+    </div>
+    <div class="row mt-5 justify-content-md-center">
+        <div class="col-xl-8 mb-5 mb-xl-0">
+            <div class="card shadow">
+                <div class="card-header border-0">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h3 class="mb-0">Pattern Composite</h3>
+                        </div>
+                        <div *ngIf="!questionWizard.wizardInProgress" class="col text-right">
+                            <button class="btn btn-sm btn-primary" (click)="startTest()">Start question wizard</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div *ngIf="questionWizard.wizardInProgress" class="row">
+                        <div class="col-3 text-left">
+                            <button class="btn btn-sm btn-primary" (click)="startTest()">Try again</button>
+                        </div>
+                        <div class="col-6 text-center">
+                            <p> {{questionWizard.currentQuestion.id}}</p>
+                        </div>
+                        <div class="col-3 text-right">
+                            <button class="btn btn-sm btn-primary" (click)="next()">Next
+                                Question</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
